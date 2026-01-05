@@ -1,0 +1,17 @@
+services:
+  php-7.3-apache2-bookworm:
+    image: drvelasquezq/php-7.3-apache2-bookworm:latest
+    container_name: container-php-7.3-apache2-bookworm
+    volumes:
+      - "./var/www/project-debug:/var/www/project-debug"
+    # para ver logs de apache
+      - "./var/log/apache2:/var/log/apache2"
+    # log de php xdebug
+    #  - "./var/log/xdebug:/var/log/xdebug"
+    #arranque
+      - "./scripts/run.sh:/scripts/run.sh"
+      # para que cuando el contenedor se acceda con vscode directamente ya tenga las extensiones instaladas de php
+      - "./root:/root"
+    command: ["sh", "/scripts/run.sh"]
+    ports:
+      - "8050:80"

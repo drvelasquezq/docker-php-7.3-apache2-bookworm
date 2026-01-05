@@ -1,0 +1,6 @@
+var/log/apache2/*
+!var/log/apache2/.gitkeep
+# var/log/xdebug/*
+# !var/log/xdebug/.gitkeep
+root/*
+!root/.gitkeep
