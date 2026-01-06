@@ -46,6 +46,8 @@ COPY ./etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available
 COPY ./etc/php/7.3/apache2/php.ini /etc/php/7.3/apache2/php.ini
 COPY ./etc/php/7.3/cli/php.ini /etc/php/7.3/cli/php.ini
 
+COPY ./etc/apache2/apache2.conf /etc/apache2/apache2.conf
+
 COPY ./etc/php/7.3/mods-available/opcache.ini /etc/php/7.3/mods-available/opcache.ini
 COPY ./etc/php/7.3/mods-available/xdebug.ini /etc/php/7.3/mods-available/xdebug.ini
 

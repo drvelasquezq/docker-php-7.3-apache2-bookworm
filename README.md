@@ -76,7 +76,7 @@ docker rm -f container-php-7.3-apache2-bookworm
 
 ### ejemplo de copia de archivo:
 ```
-docker cp container-php-7.3-apache2-bookworm:/etc/php/8.2/cli/php.ini ./etc/php/8.2/cli/
+docker cp container-php-7.3-apache2-bookworm:/etc/php/7.3/cli/php.ini ./etc/php/7.3/cli/
 ```
 
 ### ejemplo para subir imagen a docker hub
